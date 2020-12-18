@@ -9,10 +9,12 @@ class TocMachine(GraphMachine):
 
     def is_going_to_state1(self, event):
         text = event.message.text
+        print("state1", text.lower() == "go to state1")
         return text.lower() == "go to state1"
 
     def is_going_to_state2(self, event):
         text = event.message.text
+        print("state2", text.lower() == "go to state2")
         return text.lower() == "go to state2"
 
     def on_enter_state1(self, event):
