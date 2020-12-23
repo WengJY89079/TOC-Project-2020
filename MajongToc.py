@@ -28,12 +28,12 @@ class MagjongFSM(GraphMachine):
     def on_enter_dealerclear(self, event):
         print("dealer clear")
         replay_token = event.reply_token
-        send_text_message(replay_token, "門清 請個別輸入役種")
+        send_text_message(replay_token, "門清 請個別輸入役種(輸入end結束)")
         #self.go_han(event)
     def on_enter_elseclear(self, event):
         print("else clear")
         replay_token = event.reply_token
-        send_text_message(replay_token, "門清 請個別輸入役種")
+        send_text_message(replay_token, "門清 請個別輸入役種(輸入end結束)")
         #self.go_han(event)
 
     def is_going_to_notclear(self, event):
@@ -42,12 +42,12 @@ class MagjongFSM(GraphMachine):
     def on_enter_dealernotclear(self, event):
         print("dealer not clear")
         replay_token = event.reply_token
-        send_text_message(replay_token, "非門清 請個別輸入役種")
+        send_text_message(replay_token, "非門清 請個別輸入役種(輸入end結束)")
         #self.go_han(event)
     def on_enter_elsenotclear(self, event):
         print("else not clear")
         replay_token = event.reply_token
-        send_text_message(replay_token, "門清 請個別輸入役種")
+        send_text_message(replay_token, "門清 請個別輸入役種(輸入end結束)")
         #self.go_han(event)
 
     ''' full han '''
