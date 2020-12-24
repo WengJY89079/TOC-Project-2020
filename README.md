@@ -12,6 +12,8 @@
 3. 分別輸入役種，直到輸入end
 4. 輸出結果
 
+## 執行圖片
+
 ## Finite State Machine
 
 ![fsm](./fsm.png)
