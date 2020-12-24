@@ -7,34 +7,10 @@ from linebot import LineBotApi, WebhookParser
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
-from fsm import TocMachine
 from utils import send_text_message
 from MajongToc import MagjongFSM
 
 load_dotenv()
-
-
-'''machine = TocMachine(
-    states=["user", "state1", "state2"],
-    transitions=[
-        {
-            "trigger": "advance",
-            "source": "user",
-            "dest": "state1",
-            "conditions": "is_going_to_state1",
-        },
-        {
-            "trigger": "advance",
-            "source": "user",
-            "dest": "state2",
-            "conditions": "is_going_to_state2",
-        },
-        {"trigger": "go_back", "source": ["state1", "state2"], "dest": "user"},
-    ],
-    initial="user",
-    auto_transitions=False,
-    show_conditions=True,
-)'''
 
 check_clear_state = ["dealer", "elseplayer"]
 han_cal_state = ["dealerclear", "dealernotclear", "elseclear", "elsenotclear",
@@ -2744,14 +2720,6 @@ def webhook_handler():
 
     return "OK"
 
-
-@app.route("/show-fsm", methods=["GET"])
-def show_fsm():
-    machine.get_graph().draw("fsm.png", prog="dot", format="png")
-    return send_file("fsm.png", mimetype="image/png")
-
-
 if __name__ == "__main__":
-    #machine.get_graph().draw("fsm.png", prog="dot", format="png")
     port = os.environ.get("PORT", 8000)
     app.run(host="0.0.0.0", port=port, debug=True)
