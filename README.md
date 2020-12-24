@@ -14,6 +14,8 @@
 
 ## 執行圖片
 
+![](https://i.imgur.com/KeWs5c3.png)
+
 ## Finite State Machine
 
 ![fsm](./fsm.png)
