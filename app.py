@@ -577,6 +577,87 @@ machine = MagjongFSM(
             'trigger': 'go_han', 'source': 'elseclear12han', 'dest': 'elsefullhan', 'conditions': "clear_han5",
         },
         #########################
+        # dealer clear 5 han cal
+        {
+            'trigger': 'go_han', 'source': 'dealernotclear', 'dest': 'dealernotclear5han', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'dealernotclear1han', 'dest': 'dealernotclear6han', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'dealernotclear2han', 'dest': 'dealernotclear7han', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'dealernotclear3han', 'dest': 'dealernotclear8han', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'dealernotclear4han', 'dest': 'dealernotclear9han', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'dealernotclear5han', 'dest': 'dealernotclear10han', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'dealernotclear6han', 'dest': 'dealernotclear11han', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'dealernotclear7han', 'dest': 'dealernotclear12han', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'dealernotclear8han', 'dest': 'dealerfullhan', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'dealernotclear9han', 'dest': 'dealerfullhan', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'dealernotclear10han', 'dest': 'dealerfullhan', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'dealernotclear11han', 'dest': 'dealerfullhan', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'dealernotclear12han', 'dest': 'dealerfullhan', 'conditions': "clear_han5",
+        },
+        # else clear 5 han cal
+        {
+            'trigger': 'go_han', 'source': 'elsenotclear', 'dest': 'elsenotclear5han', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'elsenotclear1han', 'dest': 'elsenotclear6han', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'elsenotclear2han', 'dest': 'elsenotclear7han', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'elsenotclear3han', 'dest': 'elsenotclear8han', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'elsenotclear4han', 'dest': 'elsenotclear9han', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'elsenotclear5han', 'dest': 'elsenotclear10han', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'elsenotclear6han', 'dest': 'elsenotclear11han', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'elsenotclear7han', 'dest': 'elsenotclear12han', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'elsenotclear8han', 'dest': 'elsefullhan', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'elsenotclear9han', 'dest': 'elsefullhan', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'elsenotclear10han', 'dest': 'elsefullhan', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'elsenotclear11han', 'dest': 'elsefullhan', 'conditions': "clear_han5",
+        },
+        {
+            'trigger': 'go_han', 'source': 'elsenotclear12han', 'dest': 'elsefullhan', 'conditions': "clear_han5",
+        },
+        #########################
         # dealer clear 6 han cal
         {
             'trigger': 'go_han', 'source': 'dealerclear', 'dest': 'dealerclear6han', 'conditions': "clear_han6",
