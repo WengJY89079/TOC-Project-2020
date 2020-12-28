@@ -19,6 +19,7 @@
 ## Finite State Machine
 
 ![fsm](./fsm.png)
+![fsm1](./fsm1.png)
 
 這個fsm可分為四個部分:
 1. init分出莊家或閒家
